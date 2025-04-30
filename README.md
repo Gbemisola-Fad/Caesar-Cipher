@@ -21,7 +21,7 @@ User defined Functions - The program is structured using multiple functions to e
 
 Implementation Details
 
-Functions - The program is organized into several user-defined functions, each responsible for a specific task:
+Functions - The program is organized into several user-defined functions, each responsible for a specific task
 
 encrypt(message, shift) - Takes a plaintext message and a shift value, returning the encrypted message.
 
@@ -31,4 +31,12 @@ shift_character(char, shift) - A helper function that shifts a single character 
 handling both uppercase and lowercase letters while preserving non-alphabetic characters.
 
 main() - The main function that drives the program, handling user input and displaying results.
+
+Design Considerations
+
+Modularity - The use of functions promotes code reusability and makes the program easier to maintain and extend
+
+Input Validation - The program includes basic input validation to ensure that the shift value is within a valid range and that the input message is properly formatted
+
+Character Handling - The implementation ensures that non-alphabetic characters remain unchanged during encryption and decryption, preserving the integrity of the original message.
 
